@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar {
+    background: #003414d6;
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-button {
+    background: #00e056;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00e056;
+    border-radius: 2px;
+}
+
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+
+#navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: left;
+    font-size: 18px;
+    font-weight: 600;
+    background: #232323;
+    width: 100%;
+    height: 75px;
+    z-index: 10;
+
+}
+
+#navbar img {
+    position: absolute;
+    width: 68px;
+    left: 2%;
+    background: transparent;
+}
+
+#navbar_link {
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: transparent;
+    left: 10%;
+}
+
+#background_container {
+    position: absolute;
+    width: 100%;
+}
+
+#background_color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left top, #00e05659, #33333345);;
+}
+
+#background_container img {
+    width: 100%;
+    height: 50%;
+}
+
+#background_color h1,h2 {
+    position: relative;
+    color: white;
+    top: 200px;
+    left: 8%;
+    background: transparent;
+    width: 500px;
+    
+}
+
+#background_color h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+
+#background_color h2 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#background_color a{
+    background: #00e0568f;
+    border-radius: 2px;
+    width: 270px;
+    height: 75px;
+    position: absolute;
+    border-style: none;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: left;
+    right: -0%;
+    top: 80%;
+    transition: all 0.2s;
+
+
+}
+
+#background_color a:hover{
+    background: #00e0568f;
+    border-radius: 2px;
+    width: 290px;
+    height: 75px;
+    position: absolute;
+    border-style: none;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: left;
+    right: 0%;
+    line-height: px;
+
+}
+
+#line-text {
+    background: transparent;
+    font-size: 14px;
+    width: 270px;
+    position: absolute;
+    top: 378px;
+    left: 8.5%;
+    font-weight: 500;
+    color: rgb(185, 185, 185);
+
+}
+
+#line {
+    position: absolute;
+    background: rgb(177, 177, 177);
+    width: 2.5px;
+    height: 50px;
+    left: 8%;
+    top: 370px;
+}
+
+
+
+
+
+#information {
+    position: relative;
+    height: 75rem;
+    top: 710px;
+    background: #1a1a1a;
+    visibility: hidden;
+}
+
+
+#loading {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-name: LoadingAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background: transparent;
+
+}
+
+@keyframes LoadingAnimation {
+    0% {width: 150px; height: 150px;}
+    50% {width: 156px; height: 156px;}
+    100% {width: 150px; height: 150px;}
+}
+
+#loadingScreen {
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/984884059933147196/997532627659669524/Banner_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    top: 0;
+}
+
+
+#LoadingBackground {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to right top, #00e05669, #33333345 ,#33333345);
+}
