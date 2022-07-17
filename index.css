@@ -163,12 +163,208 @@ html {
 
 #information {
     position: relative;
-    height: 75rem;
+    height: 35rem;
     top: 710px;
     background: #1a1a1a;
     visibility: hidden;
 }
 
+#information h1 {
+    position: absolute;
+    left: 5%;
+    font-size: 50px;
+    width: 500px;
+    font-weight: 900;
+    background: transparent;
+    top: 10%;
+}
+#description {
+    position: absolute;
+    left: 7%;
+    font-size: 18px;
+    width: 500px;
+    font-weight: 500;
+    background: transparent;
+    top: 40%;
+    color: #949494;
+}
+
+#undertext {
+    position: absolute;
+    left: 7%;
+    font-size: 18px;
+    width: 500px;
+    font-weight: 500;
+    background: transparent;
+    top: 65%;
+    color: #949494;
+}
+
+#information img {
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    transform: translatY(-55%);
+    width:600px;
+    height: 412px;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 981 701'%3E%3Cpath fill='%23D8D8D8' fill-rule='evenodd' d='M980.2 161L632 701H285l348.2-540h347zM695.2 0L347 540H0L348.2 0h347z'/%3E%3C/svg%3E");
+}
+
+#circel {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #02ff63;
+    position: absolute;
+    left: 90%;
+    transform: translateX(-90%);
+    top: 80%;
+}
+
+#applications {
+    background: rgba(132, 132, 132, 0.100);
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    left: 87%;
+    transform: translateX(-87%);
+    top: 75%;
+}
+
+#line_2 {
+    position: absolute;
+    background: rgb(177, 177, 177);
+    width: 2.5px;
+    height: 190px;
+    left: 5%;
+    top: 40%;
+
+}
+
+
+#whitelist {
+    position: absolute;
+    height: 50rem;
+    width: 100%;
+    top: 1200px;
+    
+}
+
+#card {
+    position: absolute;
+    background: linear-gradient(to  top, #00e056, #00e0569d);
+    width: 500px;
+    height: 710px;
+}
+
+#card {
+    position: absolute;
+    background: rgba(70, 70, 70, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(70, 70, 70, 0.35);
+    width: 400px;
+    height: 500px;
+    left: 95%;
+    transform: translateX(-95%) translateY(-50%);
+    top: 50%;
+}
+
+#card h5 {
+    color: #00e056;
+    position: absolute;
+    top: 5%;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+    left: 2%;
+    background-color: transparent;
+}
+
+#card h1 {
+ position: absolute;
+ top: 45px;
+ font-size: 40px;
+ font-weight: 900;
+ text-align: left;
+ width: 350px;
+ background: transparent;
+ left: 2%;
+}
+
+#title_1 {
+    position: absolute;
+    top: 175px;
+    background: transparent;
+    font-size: 17px;
+    color: #949494;
+    font-weight: 300;
+    width: 320px;
+    left: 5%;
+}
+
+#undertext_1 {
+    position: absolute;
+    top: 280px;
+    background: transparent;
+    font-size: 17px;
+    color: #949494;
+    font-weight: 300;
+    width: 385px;
+    left: 5%;
+}
+
+#line_3 {
+    position: absolute;
+    background: rgb(177, 177, 177);
+    width: 2.5px;
+    height: 170px;
+    left: 2%;
+    top: 35%;
+
+}
+
+#button_whitelist {
+    position: absolute;
+    background: #00c354;
+    border-radius: 5px;
+    border: 5px solid #00c354;
+    text-align: center;
+    width: 85%;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-90%);
+    top: 90%;
+    line-height: 40px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 15px;
+
+}
+
+#button_whitelist:hover {
+    animation: pulse-animation 1.5s infinite;
+}
+
+#whitelist img {
+    position: absolute;
+    width: 800px;
+    height: 570px;
+    left: 5%;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 981 701'%3E%3Cpath fill='%23D8D8D8' fill-rule='evenodd' d='M980.2 161L632 701H285l348.2-540h347zM695.2 0L347 540H0L348.2 0h347z'/%3E%3C/svg%3E");
+    top: 40%;
+    transform: translateY(-40%);
+}
 
 #loading {
     width: 150px;
@@ -184,6 +380,17 @@ html {
 
 }
 
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px #00c354;
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+}
+
+
 @keyframes LoadingAnimation {
     0% {width: 150px; height: 150px;}
     50% {width: 156px; height: 156px;}
@@ -191,7 +398,7 @@ html {
 }
 
 #loadingScreen {
-    position: absolute;
+    position: fixed;
     background-image: url('https://cdn.discordapp.com/attachments/984884059933147196/997532627659669524/Banner_2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,6 +406,7 @@ html {
     z-index: 1000;
     height: 100%;
     top: 0;
+    transition: all 0.5s;
 }
 
 
